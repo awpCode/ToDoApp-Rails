@@ -1,0 +1,10 @@
+<%= form_with(model: @todo_list,local: true) do |f| %>
+    <%= f.label :title %>
+        <%= f.text_field :title,placeholder: "Title of article" %>
+        <br />
+    <%= f.label :description %>
+        <%= f.text_area :description,rows: 10,placeholder: "Description of article" %>
+        <br />
+    <%= f.submit %>
+<% end %>
+<%= link_to '[Cancel and return to listing ]', todo_lists_path %>

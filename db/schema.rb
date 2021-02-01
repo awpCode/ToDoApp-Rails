@@ -10,11 +10,12 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_02_01_104117) do
+ActiveRecord::Schema.define(version: 2021_02_01_114928) do
 
   create_table "todo_items", force: :cascade do |t|
     t.string "content"
     t.datetime "completed_at"
+    t.integer "todo_list_id"
   end
 
   create_table "todo_lists", force: :cascade do |t|
